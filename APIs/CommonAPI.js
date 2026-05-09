@@ -37,7 +37,7 @@ commonApp.post("/users", upload.single("profileImageUrl"), async (req, res) => {
     newUser.profileImageUrl = cloudinaryResult?.secure_url;
 
     //run validators manually
-    //hash password and replace plain with hashed one
+    //hash password and replace plain wit//h hashed one
     newUser.password = await hash(newUser.password, 12);
 
     //create New user document
