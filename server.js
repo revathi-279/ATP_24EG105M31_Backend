@@ -48,6 +48,7 @@ const connectDB = async () => {
 }
 
 connectDB()
+console.log("NEW BACKEND DEPLOYMENT MAY 9");
 
 // To handle invalid path
 app.use((req, res, next) => {
